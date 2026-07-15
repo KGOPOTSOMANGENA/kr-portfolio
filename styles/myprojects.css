@@ -1,0 +1,44 @@
+/* Navigation Bar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #F4F7FA; /* Tertiary */
+  padding: 15px 30px;
+}
+
+.navbar .logo {
+  color: #333333; /* dark gray, fully opaque */
+  font-size: 1.5em;
+  font-weight: bold;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  gap: 20px;
+}
+
+.nav-links li a {
+  color: #333333; /* dark gray so it's visible on light navbar */
+  text-decoration: none;
+  font-weight: 500;
+}
+
+.nav-links li a:hover {
+  color: #3A7BD5; /* Secondary */
+}
+
+.contact-btn {
+  background-color: #3A7BD5; /* Secondary blue */
+  padding: 8px 15px;
+  border-radius: 5px;
+  color: #FFFFFF; /* White text */
+  border: none;
+  cursor: pointer;
+}
+
+
+.contact-btn:hover {
+  background-color: #3A7BD5; /* Secondary, matches your palette */
+}

@@ -1,0 +1,252 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Certificates | Kgopotso Mangena</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Me</title>
+    <link rel="stylesheet" href="../styles/certificates.css">
+</head>
+<body>
+<style>
+  :root{
+    --ink:#0f172a;
+    --muted:#64748b;
+    --line:#e6e9f0;
+    --bg:#ffffff;
+    --panel:#f8fafc;
+    --accent:#2563eb;
+    --accent-soft:#eaf1ff;
+    --radius:14px;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    font-family:'Inter',system-ui,-apple-system,Segoe UI,sans-serif;
+    color:var(--ink);
+    background:var(--bg);
+  }
+  a{text-decoration:none;color:inherit;}
+
+  /* NAV */
+  header{
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:22px 56px;
+    border-bottom:1px solid var(--line);
+  }
+  .brand{font-weight:800;font-size:1.25rem;letter-spacing:-0.02em;}
+  nav{display:flex;align-items:center;gap:34px;}
+  nav a{font-size:0.95rem;color:var(--muted);font-weight:500;padding-bottom:4px;transition:color .15s ease;}
+  nav a:hover{color:var(--ink);}
+  nav a.active{color:var(--accent);border-bottom:2px solid var(--accent);}
+  .cta{
+    background:var(--ink);
+    color:#fff !important;
+    padding:10px 20px;
+    border-radius:8px;
+    font-weight:600;
+    font-size:0.9rem;
+  }
+  .cta:hover{background:#1e293b;}
+
+  /* HERO */
+  .hero{padding:64px 56px 40px;}
+  .eyebrow{
+    color:var(--accent);
+    font-weight:700;
+    font-size:0.78rem;
+    letter-spacing:0.14em;
+    text-transform:uppercase;
+    margin-bottom:14px;
+  }
+  h1{
+    font-size:3rem;
+    font-weight:800;
+    letter-spacing:-0.03em;
+    margin:0 0 18px;
+  }
+  .hero p{
+    max-width:640px;
+    color:var(--muted);
+    font-size:1.05rem;
+    line-height:1.6;
+    margin:0;
+  }
+  .divider{border:none;border-top:1px solid var(--line);margin:40px 0 0;}
+
+  /* GRID */
+  .grid{
+    display:grid;
+    grid-template-columns:repeat(3,1fr);
+    gap:28px;
+    padding:48px 56px 96px;
+  }
+  .card{
+    border:1px solid var(--line);
+    border-radius:var(--radius);
+    overflow:hidden;
+    background:#fff;
+    display:flex;
+    flex-direction:column;
+    transition:transform .2s ease, box-shadow .2s ease, border-color .2s ease;
+  }
+  .card:hover{
+    transform:translateY(-4px);
+    box-shadow:0 16px 32px -18px rgba(15,23,42,0.25);
+    border-color:#dbe4f5;
+  }
+  .thumb{
+    position:relative;
+    aspect-ratio:4/3;
+    background:var(--panel);
+    overflow:hidden;
+  }
+  .thumb img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+    object-position:center top;
+    display:block;
+  }
+  .body{padding:22px 22px 24px;display:flex;flex-direction:column;gap:10px;flex:1;}
+  .tag{
+    align-self:flex-start;
+    background:var(--accent-soft);
+    color:var(--accent);
+    font-size:0.72rem;
+    font-weight:700;
+    letter-spacing:0.06em;
+    text-transform:uppercase;
+    padding:5px 10px;
+    border-radius:6px;
+  }
+  .card h3{
+    font-size:1.12rem;
+    font-weight:700;
+    letter-spacing:-0.01em;
+    margin:2px 0 0;
+    line-height:1.3;
+  }
+  .issuer{color:var(--muted);font-size:0.92rem;margin:0;}
+  .foot{
+    margin-top:auto;
+    padding-top:14px;
+    border-top:1px solid var(--line);
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+  }
+  .issued{
+    font-size:0.72rem;
+    letter-spacing:0.05em;
+    color:#94a3b8;
+    font-weight:600;
+    text-transform:uppercase;
+  }
+  .verify{
+    width:22px;height:22px;border-radius:50%;
+    background:var(--accent-soft);
+    display:flex;align-items:center;justify-content:center;
+  }
+  .verify svg{width:12px;height:12px;stroke:var(--accent);}
+
+  @media (max-width:980px){
+    .grid{grid-template-columns:repeat(2,1fr);}
+  }
+  @media (max-width:680px){
+    header{padding:18px 20px;}
+    nav{display:none;}
+    .hero{padding:40px 20px 24px;}
+    h1{font-size:2.1rem;}
+    .grid{grid-template-columns:1fr;padding:32px 20px 64px;gap:20px;}
+  }
+</style>
+</head>
+<body>
+
+<header>
+  <div class="brand">Portfolio</div>
+  <nav>
+    <a href="homepage.html">Home</a>
+    <a href="aboutme.html">About Me</a>
+    <a href="certificates.html" class="active">Certificates</a>
+    <a href="myprojects.html">Projects</a>
+    <a href="contactme.html" class="cta">Contact Me</a>
+  </nav>
+</header>
+
+<section class="hero">
+  <div class="eyebrow">Verification &amp; Credentials</div>
+  <h1>My Certifications</h1>
+  <p>A curated collection of professional achievements and technical proficiencies validated by industry-leading institutions.</p>
+</section>
+<hr class="divider">
+
+<section class="grid">
+
+  <article class="card">
+    <div class="thumb"><img src="../assets/certificates/az-900-ms.png" alt="Microsoft Certified: Azure Fundamentals certificate"></div>
+    <div class="body">
+      <span class="tag">Cloud Computing</span>
+      <h3>Microsoft Certified: Azure Fundamentals</h3>
+      <p class="issuer">Microsoft</p>
+      <div class="foot">
+        <span class="issued">Earned: Jul 2026</span>
+        <span class="verify" title="Online verifiable"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="thumb"><img src="../assets/certificates/az-900-lrmg.png" alt="AZ-900 Introduction to Cloud Infrastructure certificate"></div>
+    <div class="body">
+      <span class="tag">Cloud Foundations</span>
+      <h3>AZ-900: Introduction to Cloud Infrastructure</h3>
+      <p class="issuer">Impactful, powered by LRMG</p>
+      <div class="foot">
+        <span class="issued">Issued: Jun 2026</span>
+        <span class="verify" title="Certificate on file"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="thumb"><img src="../assets/certificates/ai-900.png" alt="AI-901 Introduction to AI in Azure certificate"></div>
+    <div class="body">
+      <span class="tag">Artificial Intelligence</span>
+      <h3>AI-901: Introduction to AI in Azure</h3>
+      <p class="issuer">Impactful, powered by LRMG</p>
+      <div class="foot">
+        <span class="issued">Issued: May 2026</span>
+        <span class="verify" title="Certificate on file"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+      </div>
+    </div>
+  </article>
+
+  <article class="card">
+    <div class="thumb"><img src="../assets/certificates/react.png" alt="CodeTribe Coding Academy React Course certificate"></div>
+    <div class="body">
+      <span class="tag">Frontend Development</span>
+      <h3>CodeTribe Coding Academy: React Course</h3>
+      <p class="issuer">mlab &amp; CodeTribe</p>
+      <div class="foot">
+        <span class="issued">Issued: Mar 2026</span>
+        <span class="verify" title="Online verifiable"><svg viewBox="0 0 24 24" fill="none" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg></span>
+      </div>
+    </div>
+  </article>
+
+</section>
+
+</body>
+</html>
+</body>
+</html>
